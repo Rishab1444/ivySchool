@@ -53,12 +53,12 @@ curl -X POST -H "Content-Type: application/json" -d '{"name":"Alice", "email":"a
 ### Get a Specific User
 Endpoint: GET /api/users/:id
 curl Command: curl http://localhost:3000/api/users/<user-id>
-## Update a User
+### Update a User
 Endpoint: PUT /api/users/:id
 Request Body: Include any of name, email, age that need updating.
 curl Command:
 curl -X PUT -H "Content-Type: application/json" -d '{"name":"Updated Name", "email":"updated@example.com", "age":29}' http://localhost:3000/api/users/<user-id>
-## Delete a User
+### Delete a User
 Endpoint: DELETE /api/users/:id
 curl Command:
 curl -X DELETE http://localhost:3000/api/users/<user-id>
