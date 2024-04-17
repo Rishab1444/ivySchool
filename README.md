@@ -29,7 +29,7 @@ Before you begin, ensure you have the following installed on your system:
 
 1. **Clone the Repository** (if applicable):
   
-   git clone <repository-url>
+   git clone https://github.com/Rishab1444/ivySchool
    cd user-api
 ## 2.Install Dependencies:
 ## Navigate to the project directory and install the required npm packages:
@@ -41,24 +41,23 @@ Create a .env file in the root directory of the project and add the following li
 ## Start the Application:
 ### Run the following command to start the server:
 
-# node server.js
-# Interacting with the API
-# You can use Postman or curl to interact with the API. Below are the available endpoints and how to use them:
-
-## GET All Users
+### node server.js
+## Interacting with the API
+### You can use Postman or curl to interact with the API. Below are the available endpoints and how to use them:
+### GET All Users
 Endpoint: GET /api/users
 curl Command:
 curl http://localhost:3000/api/users
-## Add a New User
-# Endpoint: POST /api/users
-# Request Body: Include name, email, and age.
-# curl Command:
+### Add a New User
+### Endpoint: POST /api/users
+### Request Body: Include name, email, and age.
+### curl Command:
 curl -X POST -H "Content-Type: application/json" -d '{"name":"Alice", "email":"alice@example.com", "age":28}' http://localhost:3000/api/users
-# Get a Specific User
-# Endpoint: GET /api/users/:id
-# curl Command:
+### Get a Specific User
+### Endpoint: GET /api/users/:id
+### curl Command:
 curl http://localhost:3000/api/users/<user-id>
-Update a User
+## Update a User
 Endpoint: PUT /api/users/:id
 Request Body: Include any of name, email, age that need updating.
 curl Command:
