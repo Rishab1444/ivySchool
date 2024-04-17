@@ -1,11 +1,10 @@
-# ivySchool
+# IvySchool
 Assignment on Node Js and express js
 # User Management API
 
 This Node.js application provides a simple RESTful API to manage users in a MongoDB database. It supports operations to create, retrieve, update, and delete user records.
 
 ## Prerequisites
-
 Before you begin, ensure you have the following installed on your system:
 - Node.js
 - npm (Node Package Manager)
@@ -13,7 +12,6 @@ Before you begin, ensure you have the following installed on your system:
 - Postman or curl (for testing the API endpoints)
 
 ## Setting Up MongoDB Locally
-
 1. **Install MongoDB**: Follow the official guide to install MongoDB on your platform [here](https://docs.mongodb.com/manual/installation/).
 
 2. **Start MongoDB**: Ensure MongoDB is running on your local machine.
@@ -37,26 +35,24 @@ npm install
 Configure the Application:
 Create a .env file in the root directory of the project and add the following line to specify your local MongoDB URI:
 
-## MONGODB_URI=mongodb://localhost:27017/userdb
+MONGODB_URI='mongodb+srv://userDB:test123@cluster0.8wqqgo4.mongodb.net/userdb?retryWrites=true&w=majority'
 ## Start the Application:
 ### Run the following command to start the server:
-
-### node server.js
+ node server.js
 ## Interacting with the API
-### You can use Postman or curl to interact with the API. Below are the available endpoints and how to use them:
+You can use Postman or curl to interact with the API. Below are the available endpoints and how to use them:
 ### GET All Users
 Endpoint: GET /api/users
 curl Command:
 curl http://localhost:3000/api/users
 ### Add a New User
-### Endpoint: POST /api/users
-### Request Body: Include name, email, and age.
-### curl Command:
+Endpoint: POST /api/users
+Request Body: Include name, email, and age.
+curl Command:
 curl -X POST -H "Content-Type: application/json" -d '{"name":"Alice", "email":"alice@example.com", "age":28}' http://localhost:3000/api/users
 ### Get a Specific User
-### Endpoint: GET /api/users/:id
-### curl Command:
-curl http://localhost:3000/api/users/<user-id>
+Endpoint: GET /api/users/:id
+curl Command: curl http://localhost:3000/api/users/<user-id>
 ## Update a User
 Endpoint: PUT /api/users/:id
 Request Body: Include any of name, email, age that need updating.
